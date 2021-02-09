@@ -12,9 +12,9 @@ How to run unit test
 
 API endpoints with Json payload
 * Create a Transformer
-	URL:  http://localhost:8080/Transformers/
-	Method: POST
-	Payload: 
+o URL:  http://localhost:8080/Transformers/
+o Method: POST
+o Payload: 
 {
   "name": "Autobots",
   "team": "A",
@@ -32,9 +32,9 @@ CURL cmd:
 		curl -H "Content-Type: application/json" -X POST -d "{\"name\":\"Autobots\",\"team\":\"A\",\"strength\":4,\"intelligence\":4,\"speed\":4,\"endurance\":4,\"rank\":4,\"courage\":4,\"firepower\":4,\"skill\":4}" http://localhost:8080/Transformers/
 
 * Update a Transformer
-	URL:http://localhost:8080/Transformers/
-	Method: PUT
-	Payload:
+o URL:http://localhost:8080/Transformers/
+o Method: PUT
+o Payload:
 {
 "id":2,
 "name":"BluestreakMaster",
@@ -53,8 +53,8 @@ CURL cmd:
 	curl -H "Content-Type: application/json" -X PUT -d "{\"id\":2,\"name\":\"BluestreakMaster\",\"team\":\"A\",\"strength\":6,\"intelligence\":6,\"speed\":7,\"endurance\":9,\"rank\":5,\"courage\":2,\"firepower\":9,\"skill\":7}" http://localhost:8080/Transformers/
 
 * Delete a Transformer
-	URL: http://localhost:8080/Transformers/1
-	Method: DELETE
+o URL: http://localhost:8080/Transformers/1
+o Method: DELETE
 
 Note: id is passed with url
 
@@ -62,16 +62,16 @@ Curl cmd:
 	curl -H "Content-Type: application/json" -X DELETE  http://localhost:8080/Transformers/1
 
 * List Transformers
-	URL: http://localhost:8080/Transformers/
-	Method: GET
+o URL: http://localhost:8080/Transformers/
+o Method: GET
 
 CURL Cmd:
 	curl -H "Content-Type: application/json" -X GET http://localhost:8080/Transformers/
 
 * Given a list of Transformer IDs, determine the winning team
-	URL: http://localhost:8080/Transformers/FindWinningTeam/
-	Method: POST
-	Payload:
+o URL: http://localhost:8080/Transformers/FindWinningTeam/
+o Method: POST
+o Payload:
 {
   "TransformerIds":[1,2,3]
 }
