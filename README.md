@@ -85,4 +85,4 @@ CURL cmd:
 Any assumptions or notes to the reviewer
 
 - Determine winning team with only one player 
-	will return "0 battle..."
+	will return "0 battle...".
