@@ -96,7 +96,7 @@ CURL cmd:
 	curl -H "Content-Type: application/json" -X POST -d "{\"TransformerIds\":[1,2,3]}" http://localhost:8080/Transformers/FindWinningTeam/
 
 
-Any assumptions or notes to the reviewer
+Any assumptions or notes to the reviewer 
 
 - Determine winning team with only one player 
 	will return "0 battle...".
