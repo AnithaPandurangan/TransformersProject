@@ -14,7 +14,9 @@ API endpoints with Json payload
 * Create a Transformer
 
 o URL:  http://localhost:8080/Transformers/
+
 o Method: POST
+
 o Payload: 
 
 {
@@ -36,7 +38,9 @@ CURL cmd:
 * Update a Transformer
 
 o URL:http://localhost:8080/Transformers/
+
 o Method: PUT
+
 o Payload:
 {
 "id":2,
@@ -58,6 +62,7 @@ CURL cmd:
 * Delete a Transformer
 
 o URL: http://localhost:8080/Transformers/1
+
 o Method: DELETE
 
 
@@ -69,6 +74,7 @@ Curl cmd:
 * List Transformers
 
 o URL: http://localhost:8080/Transformers/
+
 o Method: GET
 
 CURL Cmd:
@@ -77,7 +83,9 @@ CURL Cmd:
 * Given a list of Transformer IDs, determine the winning team
 
 o URL: http://localhost:8080/Transformers/FindWinningTeam/
+
 o Method: POST
+
 o Payload:
 
 {
